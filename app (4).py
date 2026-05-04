@@ -186,7 +186,7 @@ st.markdown("""
 <div class='hero-box'>
     <div style='font-size:.85rem; letter-spacing:.12em; text-transform:uppercase; opacity:.82;'>Decision-Making Intelligence</div>
     <div style='font-size:2rem; font-weight:800; line-height:1.1; margin-top:.35rem;'>Business Gap Analysis Dashboard</div>
-    <div style='margin-top:.55rem; max-width:980px; font-size:1rem; opacity:.92;'>Decision-Making Intelligence · Automobile · IT Solutions · Health & Beauty.</div>
+    <div style='margin-top:.55rem; max-width:980px; font-size:1rem; opacity:.92;'> · Automobile · IT Solutions · Health & Beauty.</div>
 </div>
 """, unsafe_allow_html=True)
 
