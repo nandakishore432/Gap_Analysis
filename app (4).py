@@ -137,6 +137,14 @@ def make_zip(file_map):
 auto, it, hb = build_data()
 datasets = {'Automobile': auto, 'IT Solutions': it, 'Health & Beauty': hb}
 
+
+
+portfolio_notes = {
+    'Automobile': ['Gap-aligned highlights: visitor-to-delivery funnel, marketing efficiency, and monthly revenue momentum.', 'Positive options included: date filtering, direct CSV export, and portfolio-ready KPI storytelling.'],
+    'IT Solutions': ['Gap-aligned highlights: lead qualification quality, demo-to-proposal movement, and close-rate visibility.', 'Positive options included: executive overview, drilldown trends, and exportable filtered data.'],
+    'Health & Beauty': ['Gap-aligned highlights: reach-to-consult conversion, walk-in monetization, and repeat-client retention.', 'Positive options included: NPS tracking, presentation-friendly charts, and portfolio-specific downloads.']
+}
+
 metric_map = {
     'Automobile': {
         'top_label': 'Delivered vehicles', 'top_value': 'vehicles_delivered', 'revenue': 'revenue_cr', 'conversion': 'overall_conversion', 'eff': 'cpa',
@@ -258,6 +266,9 @@ def sector_page(name):
     with top1:
         st.subheader(f'{name} portfolio dashboard')
         st.caption('Filtered view with conversion tracking, trend analysis, and export-ready data.')
+        note1, note2 = portfolio_notes[name]
+        st.info(note1)
+        st.success(note2)
     with top2:
         render_export_panel(name, format_display_df(df))
 
