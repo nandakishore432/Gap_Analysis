@@ -4,7 +4,7 @@ import plotly
 import plotly.express as px
 
 # Load data
-file = r"C:\Users\admin\Desktop\Stackly tasks\10. Dashboard for Gap Analysis\automobile_dashboard_dataset.xlsx"
+file = "automobile_dashboard_dataset.xlsx"
 vehicles = pd.read_excel(file, sheet_name="Vehicles")
 users = pd.read_excel(file, sheet_name="Users")
 interactions = pd.read_excel(file, sheet_name="Interactions")
